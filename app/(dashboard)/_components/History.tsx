@@ -186,6 +186,8 @@ function CustomTooltip({ active, payload, formatter }: any) {
 
   const data = payload[0].payload;
   const { expense, income } = data;
+  console.log("$$$ INCOME $$$", income);
+  console.log("$$$ EXPENSE $$$", expense);
   return (
     <div className="min-w-[300px] rounded border bg-background p-4">
       <TooltipRow

@@ -22,7 +22,7 @@ import {
 import { Currencies, Currency } from "@/lib/currencies";
 import SkeletonWrapper from "./SkeletonWrapper";
 import { UserSettings } from "@prisma/client";
-import { UpdateUserCurrency } from "@/app/(dashboard)/settings/_actions/userSettings";
+import { UpdateUserCurrency } from "@/app/(dashboard)/manage/_actions/userSettings";
 import { toast } from "sonner";
 
 export function CurrencyComboBox() {

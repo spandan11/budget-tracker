@@ -6,6 +6,7 @@ import CreateTransactionDialog from "./_components/CreateTransactionDialog";
 import Overview from "./_components/Overview";
 import { db } from "@/lib/db";
 import History from "./_components/History";
+import { revalidatePath } from "next/cache";
 
 const DashboardPage = async () => {
   const user = await currentUser();
@@ -16,7 +17,17 @@ const DashboardPage = async () => {
     },
   });
 
-  if (!userSettings) redirect("/settings");
+  if (!userSettings) {
+    // const newUserSettingCreated = await db.userSettings.create({
+    //   data: {
+    //     userId: user.id,
+    //   },
+    // });
+    // if (newUserSettingCreated) {
+    //   revalidatePath("/");
+    // }
+    return;
+  }
   return (
     <div className="h-full bg-background">
       <div className="border-b bg-card">
