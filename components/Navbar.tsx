@@ -25,10 +25,10 @@ const routes = [
     label: "Manage",
     href: "/manage",
   },
-  {
-    label: "Settings",
-    href: "/settings",
-  },
+  // {
+  //   label: "Settings",
+  //   href: "/settings",
+  // },
 ];
 
 const Navbar = () => {

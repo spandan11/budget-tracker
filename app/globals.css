@@ -81,3 +81,17 @@ body,
     @apply bg-background text-foreground;
   }
 }
+
+/* Removing clerk branding */
+
+.cl-internal-11ttlho {
+  display: none;
+}
+
+.cl-internal-lqfubk {
+  display: none;
+}
+
+.cl-internal-180wb59 {
+  display: none;
+}
